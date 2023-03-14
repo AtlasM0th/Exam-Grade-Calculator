@@ -1,0 +1,22 @@
+print("Exam Grade Calculator")
+
+examName = input("Name of Exam: ")
+examMax = int(input("Maximum marks possible: "))
+examOb = int(input("How many marks did you score?: "))
+examPerC = examOb/examMax
+examPerC = round(examPerC, 2)
+
+print("This makes your grade: ")
+
+if examPerC <= 0.49:
+    print(f"{examPerC}% U")
+elif examPerC >= 0.50 and examPerC <= 0.59:
+    print(f"{examPerC}% D")
+if examPerC >=0.60 and examPerC <= 0.69:
+    print(f"{examPerC}% C")
+if examPerC >=0.70 and examPerC <= 0.79:
+    print(f"{examPerC}% B")
+if examPerC >=0.80 and examPerC <= 0.89:
+    print(f"{examPerC}% A-")
+if examPerC >=0.90 and examPerC <= 1.00:
+    print(f"{examPerC}% A+")
